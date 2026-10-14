@@ -252,6 +252,8 @@
       let frameIndex = 0;
 
       const img = new Image();
+      // This tells the browser and CDN to allow pixel-level access
+      img.crossOrigin = "anonymous"; 
       img.src = imgUrl;
 
       img.onload = () => {
